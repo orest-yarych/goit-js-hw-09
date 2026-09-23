@@ -86,7 +86,6 @@ function createGalleryItem({ preview, original, description }) {
 refs.gallery.innerHTML = images.map(image => createGalleryItem(image)).join('');
 
 let gallery = new SimpleLightbox('.gallery a', {
-  captions: true,
   captionsData: 'alt',
   captionPosition: 'bottom',
   captionDelay: 250,

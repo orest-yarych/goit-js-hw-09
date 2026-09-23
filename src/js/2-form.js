@@ -33,8 +33,7 @@ function onFormSubmit(event) {
   for (const key in formData) {
     formData[key] = '';
   }
-  console.log('secont :', formData);
-  saveToLS(STORAGE_KEY, formData);
+  localStorage.removeItem(STORAGE_KEY);
 }
 
 function loadFromLS(key) {
